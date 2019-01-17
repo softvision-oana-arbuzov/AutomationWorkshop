@@ -13,8 +13,8 @@ public class Organization {
     private ArrayList<Organization> employees;
 
     public Organization(String firstName, String lastName, int age, String sex, String department) {
-        this.firstName = lastName;
-        this.lastName = firstName;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.age = age;
         this.sex = sex;
         this.department = department;
