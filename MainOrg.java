@@ -30,7 +30,7 @@ public class MainOrg {
         org.addEmployee(employee7);
         org.printEmployeeDetails(employee7);
 
-        org.printEmployee();
+        org.printEmployees();
         System.out.println();
 
         org.searchByFirstName("Griffin");
@@ -56,7 +56,7 @@ public class MainOrg {
 
         System.out.println();
         org.removeEmployeeByFirstName("Costa");
-        org.printEmployee();
+        org.printEmployees();
         org.addEmployee(employee5);
         System.out.println();
 

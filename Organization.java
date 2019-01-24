@@ -18,23 +18,25 @@ public class Organization {
     }
 
     //Print employees
-    public void printEmployee() {
+    public void printEmployees() {
         System.out.println("All employees from the Organization: ");
         for (Employee person : employee) {
             System.out.println(person);
         }
     }
 
+    //Print employee details
     public void printEmployeeDetails(Employee person) {
-            System.out.println("Employee details:");
-            System.out.println("First name: " + person.getFirstName());
-            System.out.println("Last name: " + person.getLastName());
-            System.out.println("Age: " + person.getAge());
-            System.out.println("Sex: " + person.getGender());
-            System.out.println("Department: " + person.getDepartment());
-            System.out.println();
+        System.out.println("Employee details:");
+        System.out.println("First name: " + person.getFirstName());
+        System.out.println("Last name: " + person.getLastName());
+        System.out.println("Age: " + person.getAge());
+        System.out.println("Sex: " + person.getGender());
+        System.out.println("Department: " + person.getDepartment());
+        System.out.println();
     }
 
+    //Print employee details without department
     public void printEmployeeNoDepartment(Employee person) {
         System.out.println("Employee details:");
         System.out.println("First name: " + person.getFirstName());
@@ -187,7 +189,7 @@ public class Organization {
     public void changeGender(Employee person, Employee.Gender sex) {
         for (Employee empl : employee) {
             if (person == empl) {
-                System.out.println("Gender was changed for - " + person.getFirstName() + " " + person.getLastName() + " - from - " + person.getGender() +  " - to - " + sex);
+                System.out.println("Gender was changed for - " + person.getFirstName() + " " + person.getLastName() + " - from - " + person.getGender() + " - to - " + sex);
                 person.setGender(sex);
             }
         }

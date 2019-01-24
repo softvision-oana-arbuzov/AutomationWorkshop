@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Employee extends Organization{
+public class Employee extends Organization {
     private String firstName;
     private String lastName;
     private int age;
@@ -28,17 +28,12 @@ public class Employee extends Organization{
     }
 
     public enum Department {
-        HR, IT, DEV, QA , NONE;
+        HR, IT, DEV, QA, NONE;
     }
 
-    // When printing employee list method it sets the input to display as below
+    //When printing employee list method it sets the input to display as below
     public String toString() {
         return this.firstName + " " + this.lastName + " " + this.age + " " + this.sex + " " + this.department;
-    }
-
-    public void printEmployee() {
-        System.out.println(this.firstName + " " + this.lastName + " " + this.age + " " + this.sex + " " + this.department);
-        System.out.println();
     }
 
     //Getters and Setters
@@ -66,13 +61,21 @@ public class Employee extends Organization{
         this.age = age;
     }
 
-    public Gender getGender() {return this.sex;}
+    public Gender getGender() {
+        return this.sex;
+    }
 
-    public void setGender(Gender sex){this.sex = sex;}
+    public void setGender(Gender sex) {
+        this.sex = sex;
+    }
 
-    public Department getDepartment() {return this.department;}
+    public Department getDepartment() {
+        return this.department;
+    }
 
-    public void setDepartment(Department department){this.department = department;}
+    public void setDepartment(Department department) {
+        this.department = department;
+    }
 
 }
 
