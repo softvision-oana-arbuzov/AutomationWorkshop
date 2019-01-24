@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 
 public class Organization {
@@ -18,23 +19,31 @@ public class Organization {
 
     //Print employees
     public void printEmployee() {
+        System.out.println("All employees from the Organization: ");
         for (Employee person : employee) {
             System.out.println(person);
         }
     }
 
-//    public void printEmployeeDetails(int i) {
-//        for (i = 0; i < this.employee.size(); i++) {
-//            System.out.println("Employee details:");
-//            System.out.println("First name: " + this.employee.get(i).getFirstName());
-//            System.out.println("Last name: " + this.employee.get(i).getLastName());
-//            System.out.println("Age: " + this.employee.get(i).getAge());
-//            System.out.println("Sex: " + this.employee.get(i).getGender());
-//            System.out.println("Department: " + this.employee.get(i).getDepartment());
-//            System.out.println();
-//            i++;
-//        }
-//    }
+    public void printEmployeeDetails(Employee person) {
+            System.out.println("Employee details:");
+            System.out.println("First name: " + person.getFirstName());
+            System.out.println("Last name: " + person.getLastName());
+            System.out.println("Age: " + person.getAge());
+            System.out.println("Sex: " + person.getGender());
+            System.out.println("Department: " + person.getDepartment());
+            System.out.println();
+    }
+
+    public void printEmployeeNoDepartment(Employee person) {
+        System.out.println("Employee details:");
+        System.out.println("First name: " + person.getFirstName());
+        System.out.println("Last name: " + person.getLastName());
+        System.out.println("Age: " + person.getAge());
+        System.out.println("Sex: " + person.getGender());
+        System.out.println("Department: NONE");
+        System.out.println();
+    }
 
     //Remove employee by FirstName
     public void removeEmployeeByFirstName(String personFirstName) {
@@ -49,7 +58,6 @@ public class Organization {
         }
         if (found) {
             System.out.println("Employee with the first name - " + personFirstName + " - was not found");
-            found = true;
         }
     }
 
@@ -66,7 +74,6 @@ public class Organization {
         }
         if (found) {
             System.out.println("Employee with the name - " + personFirstName + " " + personLastName + " - was not found.");
-            found = true;
         }
     }
 
@@ -83,7 +90,6 @@ public class Organization {
         }
         if (found) {
             System.out.println("Employee with the first name - " + personFirstName + " - was not found");
-            found = true;
         }
     }
 
@@ -100,7 +106,6 @@ public class Organization {
         }
         if (found) {
             System.out.println("Employee with the last name - " + personLastName + " - was not found");
-            found = true;
         }
     }
 
@@ -117,7 +122,6 @@ public class Organization {
         }
         if (found) {
             System.out.println("Employee with - " + personAge + " years - was not found");
-            found = true;
         }
     }
 
@@ -134,7 +138,6 @@ public class Organization {
         }
         if (found) {
             System.out.println("Employee with - " + personGender + " gender - was not found");
-            found = true;
         }
     }
 
@@ -151,36 +154,51 @@ public class Organization {
         }
         if (found) {
             System.out.println("Employee from - " + personDepartment + " department - was not found");
-            found = true;
         }
     }
 
     public void changeFirstName(Employee person, String firstName) {
         for (Employee empl : employee) {
             if (person == empl) {
-                person.this.employee.setFirstName(firstName);
+                System.out.println("First name was changed from - " + person.getFirstName() + " " + person.getLastName() + " - to - " + firstName + " " + person.getLastName());
+                person.setFirstName(firstName);
             }
         }
     }
-//
-//    public void setLastName(String newLastName) {
-//        this.lastName = newLastName;
-//        System.out.print("Last name was changed for: ");
-//    }
-//
-//    public void setAge(int newAge) {
-//        this.age = newAge;
-//        System.out.print("Age was changed for: ");
-//    }
-//
-//    public void setSex(String newSex) {
-//        this.sex = newSex;
-//        System.out.print("Sex was changed for: ");
-//    }
-//
-//    public void setDepartment(String newDepartment) {
-//        this.department = newDepartment;
-//        System.out.print("Department was changed for: ");
-//    }
 
+    public void changeLastName(Employee person, String lastName) {
+        for (Employee empl : employee) {
+            if (person == empl) {
+                System.out.println("Last name was changed from - " + person.getFirstName() + " " + person.getLastName() + " - to - " + person.getFirstName() + " " + lastName);
+                person.setLastName(lastName);
+            }
+        }
+    }
+
+    public void changeAge(Employee person, int age) {
+        for (Employee empl : employee) {
+            if (person == empl) {
+                System.out.println("Age was changed for - " + person.getFirstName() + " " + person.getLastName() + " - from - " + person.getAge() + " - to - " + age);
+                person.setAge(age);
+            }
+        }
+    }
+
+    public void changeGender(Employee person, Employee.Gender sex) {
+        for (Employee empl : employee) {
+            if (person == empl) {
+                System.out.println("Gender was changed for - " + person.getFirstName() + " " + person.getLastName() + " - from - " + person.getGender() +  " - to - " + sex);
+                person.setGender(sex);
+            }
+        }
+    }
+
+    public void changeDepartment(Employee person, Employee.Department department) {
+        for (Employee empl : employee) {
+            if (person == empl) {
+                System.out.println("Department was changed for - " + person.getFirstName() + " " + person.getLastName() + " - from - " + person.getDepartment() + " - to - " + department);
+                person.setDepartment(department);
+            }
+        }
+    }
 }

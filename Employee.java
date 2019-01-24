@@ -7,6 +7,7 @@ public class Employee extends Organization{
     private Gender sex;
     private Department department;
 
+    //Employee constructor - with no department
     public Employee(String firstName, String lastName, int age, Gender sex) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -35,26 +36,6 @@ public class Employee extends Organization{
         return this.firstName + " " + this.lastName + " " + this.age + " " + this.sex + " " + this.department;
     }
 
-    public void printEmployeeNoDepartment() {
-        System.out.println("Employee details:");
-        System.out.println("First name: " + this.firstName);
-        System.out.println("Last name: " + this.lastName);
-        System.out.println("Age: " + this.age);
-        System.out.println("Sex: " + this.sex);
-        System.out.println("Department: " + Department.NONE);
-        System.out.println();
-    }
-
-    public void printEmployeeDetails() {
-        System.out.println("Employee details:");
-        System.out.println("First name: " + this.firstName);
-        System.out.println("Last name: " + this.lastName);
-        System.out.println("Age: " + this.age);
-        System.out.println("Sex: " + this.sex);
-        System.out.println("Department: " + this.department);
-        System.out.println();
-    }
-
     public void printEmployee() {
         System.out.println(this.firstName + " " + this.lastName + " " + this.age + " " + this.sex + " " + this.department);
         System.out.println();
@@ -65,7 +46,7 @@ public class Employee extends Organization{
         return this.firstName;
     }
 
-    public void setFirstName() {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
@@ -73,7 +54,7 @@ public class Employee extends Organization{
         return this.lastName;
     }
 
-    public void setLastName() {
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
@@ -81,17 +62,17 @@ public class Employee extends Organization{
         return this.age;
     }
 
-    public void setAge() {
+    public void setAge(int age) {
         this.age = age;
     }
 
     public Gender getGender() {return this.sex;}
 
-    public void setGender(){this.sex = sex;}
+    public void setGender(Gender sex){this.sex = sex;}
 
     public Department getDepartment() {return this.department;}
 
-    public void setDepartment(){this.department = department;}
+    public void setDepartment(Department department){this.department = department;}
 
 }
 

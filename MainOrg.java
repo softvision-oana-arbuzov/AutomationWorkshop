@@ -16,19 +16,19 @@ public class MainOrg {
         Employee employee7 = new Employee("Griffin", "Aneta", 22, Employee.Gender.OTHER, Employee.Department.IT);
 
         org.addEmployee(employee1);
-        employee1.printEmployeeNoDepartment();
+        org.printEmployeeNoDepartment(employee1);
         org.addEmployee(employee2);
-        employee2.printEmployeeDetails();
+        org.printEmployeeDetails(employee2);
         org.addEmployee(employee3);
-        employee3.printEmployeeDetails();
+        org.printEmployeeDetails(employee3);
         org.addEmployee(employee4);
-        employee4.printEmployeeDetails();
+        org.printEmployeeDetails(employee4);
         org.addEmployee(employee5);
-        employee5.printEmployeeDetails();
+        org.printEmployeeDetails(employee5);
         org.addEmployee(employee6);
-        employee6.printEmployeeDetails();
+        org.printEmployeeDetails(employee6);
         org.addEmployee(employee7);
-        employee7.printEmployeeDetails();
+        org.printEmployeeDetails(employee7);
 
         org.printEmployee();
         System.out.println();
@@ -36,16 +36,20 @@ public class MainOrg {
         org.searchByFirstName("Griffin");
         org.searchByFirstName("Beck");
         org.searchByFirstName("Scott");
+
         org.searchByLastName("Griffin");
         org.searchByLastName("Jenny");
+
         org.searchByAge(32);
         org.searchByAge(77);
         org.searchByAge(34);
         org.searchByAge(24);
         org.searchByAge(100);
+
         org.searchByGender(Employee.Gender.FEMALE);
         org.searchByGender(Employee.Gender.MALE);
         org.searchByGender(Employee.Gender.OTHER);
+
         org.searchByDepartment(Employee.Department.QA);
         org.searchByDepartment(Employee.Department.IT);
         org.searchByDepartment(Employee.Department.HR);
@@ -55,28 +59,26 @@ public class MainOrg {
         org.printEmployee();
         org.addEmployee(employee5);
         System.out.println();
+
         org.removeEmployeeByFirstName("Costa", "Dave");
         org.addEmployee(employee5);
+
         org.removeEmployeeByFirstName("Parasuta");
         System.out.println();
 
-//        System.out.println("");
-//        employee2.setFirstName("Daniela");
-//        employee2.printEmployee();
-//        employee2.setLastName("Popica");
-//        employee2.printEmployee();
-//        employee2.setSex("Female");
-//        employee2.printEmployee();
-//
-//        employee3.setDepartment("HR");
-//        employee3.printEmployee();
-//
-//        employee4.setAge(25);
-//        employee4.printEmployee();
-//
-//        System.out.println("");
-//        employee1.searchEmployee(employee1);
-//        employee4.searchEmployee(employee4);
+        org.changeFirstName(employee6, "Medan");
+        org.printEmployeeDetails(employee6);
 
+        org.changeLastName(employee2, "Adela");
+        org.printEmployeeDetails(employee2);
+
+        org.changeAge(employee4, 25);
+        org.printEmployeeDetails(employee4);
+
+        org.changeGender(employee6, Employee.Gender.MALE);
+        org.printEmployeeDetails(employee6);
+
+        org.changeDepartment(employee1, Employee.Department.IT);
+        org.printEmployeeDetails(employee1);
     }
 }
