@@ -7,13 +7,13 @@ public class MainOrg {
         //Scanner reader = new Scanner(System.in);
         Organization org = new Organization();
 
-        Employee employee1 = new Employee("Griffin", "Peter", 32, Employee.Gender.MALE, Employee.Department.NONE);
-        Employee employee2 = new Employee("Pop", "Mirela", 28, Employee.Gender.FEMALE, Employee.Department.DEV);
-        Employee employee3 = new Employee("Taylor", "Scott", 18, Employee.Gender.MALE, Employee.Department.NONE);
-        Employee employee4 = new Employee("Beck", "Jenny", 24, Employee.Gender.FEMALE, Employee.Department.NONE);
-        Employee employee5 = new Employee("Costa", "Dave", 34, Employee.Gender.MALE, Employee.Department.QA);
-        Employee employee6 = new Employee("Adronic", "Adam", 32, Employee.Gender.OTHER, Employee.Department.QA);
-        Employee employee7 = new Employee("Griffin", "Aneta", 22, Employee.Gender.OTHER, Employee.Department.IT);
+        Employee employee1 = new Employee("Griffin", "Peter", 32, Gender.MALE, Department.NONE);
+        Employee employee2 = new Employee("Pop", "Mirela", 28, Gender.FEMALE, Department.DEV);
+        Employee employee3 = new Employee("Taylor", "Scott", 18, Gender.MALE, Department.NONE);
+        Employee employee4 = new Employee("Beck", "Jenny", 24, Gender.FEMALE, Department.NONE);
+        Employee employee5 = new Employee("Costa", "Dave", 34, Gender.MALE, Department.QA);
+        Employee employee6 = new Employee("Adronic", "Adam", 32, Gender.OTHER, Department.QA);
+        Employee employee7 = new Employee("Griffin", "Aneta", 22, Gender.OTHER, Department.IT);
 
         org.addEmployee(employee1);
         org.printEmployeeNoDepartment(employee1);
@@ -46,13 +46,13 @@ public class MainOrg {
         org.searchByAge(24);
         org.searchByAge(100);
 
-        org.searchByGender(Employee.Gender.FEMALE);
-        org.searchByGender(Employee.Gender.MALE);
-        org.searchByGender(Employee.Gender.OTHER);
+        org.searchByGender(Gender.FEMALE);
+        org.searchByGender(Gender.MALE);
+        org.searchByGender(Gender.OTHER);
 
-        org.searchByDepartment(Employee.Department.QA);
-        org.searchByDepartment(Employee.Department.IT);
-        org.searchByDepartment(Employee.Department.HR);
+        org.searchByDepartment(Department.QA);
+        org.searchByDepartment(Department.IT);
+        org.searchByDepartment(Department.HR);
 
         System.out.println();
         org.removeEmployeeByFirstName("Costa");
@@ -75,10 +75,10 @@ public class MainOrg {
         org.changeAge(employee4, 25);
         org.printEmployeeDetails(employee4);
 
-        org.changeGender(employee6, Employee.Gender.MALE);
+        org.changeGender(employee6, Gender.MALE);
         org.printEmployeeDetails(employee6);
 
-        org.changeDepartment(employee1, Employee.Department.IT);
+        org.changeDepartment(employee1, Department.IT);
         org.printEmployeeDetails(employee1);
     }
 }

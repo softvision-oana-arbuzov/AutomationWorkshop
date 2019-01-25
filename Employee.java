@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Employee extends Organization {
     private String firstName;
     private String lastName;
-    private int age;
+    private Integer age;
     private Gender sex;
     private Department department;
 
@@ -21,14 +21,6 @@ public class Employee extends Organization {
         this.age = age;
         this.sex = sex;
         this.department = department;
-    }
-
-    public enum Gender {
-        FEMALE, MALE, OTHER;
-    }
-
-    public enum Department {
-        HR, IT, DEV, QA, NONE;
     }
 
     //When printing employee list method it sets the input to display as below
@@ -53,11 +45,11 @@ public class Employee extends Organization {
         this.lastName = lastName;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return this.age;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 
