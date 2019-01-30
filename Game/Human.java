@@ -4,12 +4,14 @@ import java.util.Map;
 public class Human implements Character {
     private Integer health;
     private Integer ammo;
-    private boolean isDead;
+    //private boolean isDead;
+    final Integer DMG = 15;
+    final Integer AMMO = 15;
 
     public Human(Integer health, Integer ammo) {
         this.health = health;
         this.ammo = ammo;
-        this.isDead = false;
+        //this.isDead = false;
     }
 
     //Getters and Setters
@@ -36,23 +38,32 @@ public class Human implements Character {
 
     public Integer shootAlien(Alien alien) {
         Integer alienHealth = alien.getHealth();
-        if (this.health != 0 && this.ammo != 0){
-            alienHealth = alienHealth - 15;
-            alien.setHealth(alienHealth);
-            this.ammo = this.ammo - 15;
+        if (canShoot()) {
+            if (alienHealth != 0) {
+                alienHealth = alienHealth - DMG;
+                alien.setHealth(alienHealth);
+                this.ammo = this.ammo - AMMO;
+                return alienHealth;
+            } else {
+                System.out.println("Alien is dead");
+                return alienHealth;
+            }
+        }else {
+            System.out.println("Human can no longer shoot.");
             return alienHealth;
-        } else{
-            alien.isDead();
         }
-        return alienHealth;
     }
 
     public boolean isDead() {
-        if (this.health == 0) {
-            System.out.println("Alien is dead");
-            return true;
-        }
-        return false;
+        return this.health == 0;
+    }
+
+    public boolean canShoot() {
+        return !isDead() && this.ammo >= AMMO;
+    }
+
+    public void printHumanDetails() {
+        System.out.println("Human life: " + getHealth() + " Human ammo: " + getAmmo());
     }
 
 }

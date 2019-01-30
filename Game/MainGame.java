@@ -5,22 +5,24 @@ public class MainGame {
         Human human = new Human(100, 200);
         Alien alien = new Alien(200, 100);
 
-        System.out.println("Human life: " + human.getHealth() + " Human ammo: " + human.getAmmo());
-        System.out.println("Alien life: " + alien.getHealth() + " Alien energy: " + alien.getEnergy());
+        human.printHumanDetails();
+        alien.printAlienDetails();
 
-        while (!human.isDead() && !alien.isDead()) {
+        while (human.canShoot() && alien.canBite()) {
+            System.out.println();
             alien.biteHuman(human);
-            System.out.println("Human bitten");
-            System.out.println("Human life: " + human.getHealth() + " Human ammo: " + human.getAmmo());
-            System.out.println("Alien life: " + alien.getHealth() + " Alien energy: " + alien.getEnergy());
+            human.printHumanDetails();
+            alien.printAlienDetails();
+
+            System.out.println();
             human.shootAlien(alien);
-            System.out.println("Alien shot");
-            System.out.println("Human life: " + human.getHealth() + " Human ammo: " + human.getAmmo());
-            System.out.println("Alien life: " + alien.getHealth() + " Alien energy: " + alien.getEnergy());
+            human.printHumanDetails();
+            alien.printAlienDetails();
+
+            System.out.println();
             human.shootAlien(alien);
-            System.out.println("Alien shot");
-            System.out.println("Human life: " + human.getHealth() + " Human ammo: " + human.getAmmo());
-            System.out.println("Alien life: " + alien.getHealth() + " Alien energy: " + alien.getEnergy());
+            human.printHumanDetails();
+            alien.printAlienDetails();
         }
     }
 }

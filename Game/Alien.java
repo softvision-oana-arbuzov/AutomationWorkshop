@@ -2,6 +2,7 @@ public class Alien implements Character {
     private Integer health;
     private Integer energy;
     private boolean isDead;
+    final Integer ENG = 10;
 
     public Alien(Integer health, Integer energy) {
         this.health = health;
@@ -33,33 +34,48 @@ public class Alien implements Character {
 
     public Integer biteHuman(Human human) {
         Integer humanHealth = human.getHealth();
-        if (this.energy <= 100 && this.energy >= 80) {
-            humanHealth = humanHealth - 20;
-            human.setHealth(humanHealth);
-            this.energy = this.energy - 10;
-            return humanHealth;
-        } else if (this.energy < 80 && this.energy >= 50) {
-            humanHealth = humanHealth - 10;
-            human.setHealth(humanHealth);
-            this.energy = this.energy - 10;
-            return humanHealth;
-        } else if (this.energy < 50 && this.energy >=10) {
-            humanHealth = humanHealth - 5;
-            human.setHealth(humanHealth);
-            this.energy = this.energy - 10;
-            return humanHealth;
-        } else {
-            human.isDead();
+        if (canBite()) {
+            if(humanHealth != 0) {
+                if (this.energy >= 80) {
+                    humanHealth = humanHealth - 20;
+                    human.setHealth(humanHealth);
+                    this.energy = this.energy - ENG;
+                    return humanHealth;
+                } else if (this.energy >= 60) {
+                    humanHealth = humanHealth - 10;
+                    human.setHealth(humanHealth);
+                    this.energy = this.energy - ENG;
+                    return humanHealth;
+                } else if (this.energy >= 10) {
+                    humanHealth = humanHealth - 5;
+                    human.setHealth(humanHealth);
+                    this.energy = this.energy - ENG;
+                    return humanHealth;
+                }else{
+                    System.out.println("Alien has no more energy");
+                    return humanHealth;
+                }
+            }else {
+                System.out.println("Human is dead");
+                return humanHealth;
+
+            }
+        }else{
+                System.out.println("Alien is dead or has no energy");
+                return humanHealth;
         }
-        return humanHealth;
     }
 
     public boolean isDead() {
-        if (this.health == 0) {
-            System.out.println("Human is dead");
-            return true;
-        }
-        return false;
+        return this.health == 0;
+    }
+
+    public boolean canBite() {
+        return !isDead()  && this.energy >= ENG;
+    }
+
+    public void printAlienDetails() {
+        System.out.println("Alien life: " + getHealth() + " Alien energy: " + getEnergy());
     }
 
 }
