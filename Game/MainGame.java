@@ -10,19 +10,21 @@ public class MainGame {
 
         while (human.canShoot() && alien.canBite()) {
             System.out.println();
+            System.out.println("Human health: " + human.getHealth() + " Alien energy: " + alien.getEnergy());
             alien.biteHuman(human);
-            human.printHumanDetails();
-            alien.printAlienDetails();
+            System.out.println("Human bitten");
+            System.out.println("Human health: " + human.getHealth() + " Alien energy: " + alien.getEnergy());
+
+            System.out.println();
+            System.out.println("Alien health: " + alien.getHealth() + " Human ammo: " + human.getAmmo());
+            human.shootAlien(alien);
+            System.out.println("Alien shot");
+            System.out.println("Alien health: " + alien.getHealth() + " Human ammo: " + human.getAmmo());
 
             System.out.println();
             human.shootAlien(alien);
-            human.printHumanDetails();
-            alien.printAlienDetails();
-
-            System.out.println();
-            human.shootAlien(alien);
-            human.printHumanDetails();
-            alien.printAlienDetails();
+            System.out.println("Alien shot");
+            System.out.println("Alien health: " + alien.getHealth() + " Human ammo: " + human.getAmmo());
         }
     }
 }
