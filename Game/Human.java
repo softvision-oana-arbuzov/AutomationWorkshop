@@ -39,7 +39,7 @@ public class Human implements Character {
     public Integer shootAlien(Alien alien) {
         Integer alienHealth = alien.getHealth();
         if (canShoot()) {
-            if (alienHealth != 0) {
+            if (alienHealth > 0) {
                 alienHealth = alienHealth - DMG;
                 alien.setHealth(alienHealth);
                 this.ammo = this.ammo - AMMO;

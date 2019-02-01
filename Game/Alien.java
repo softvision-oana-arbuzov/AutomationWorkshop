@@ -35,18 +35,18 @@ public class Alien implements Character {
     public Integer biteHuman(Human human) {
         Integer humanHealth = human.getHealth();
         if (canBite()) {
-            if(humanHealth != 0) {
-                if (this.energy > 80) {
+            if(humanHealth > 0) {
+                if (this.energy >= 80) {
                     humanHealth = humanHealth - 20;
                     human.setHealth(humanHealth);
                     this.energy = this.energy - ENG;
                     return humanHealth;
-                } else if (this.energy > 60) {
+                } else if (this.energy >= 60) {
                     humanHealth = humanHealth - 10;
                     human.setHealth(humanHealth);
                     this.energy = this.energy - ENG;
                     return humanHealth;
-                } else if (this.energy > 10) {
+                } else if (this.energy >= 10) {
                     humanHealth = humanHealth - 5;
                     human.setHealth(humanHealth);
                     this.energy = this.energy - ENG;
