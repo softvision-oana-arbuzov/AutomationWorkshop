@@ -32,6 +32,14 @@ public class Alien implements Character {
         this.energy = energy;
     }
 
+    public boolean getIsDead (){
+        return this.isDead;
+    }
+
+    public void setIsDead (boolean isDead){
+        this.isDead = isDead;
+    }
+
     public Integer biteHuman(Human human) {
         Integer humanHealth = human.getHealth();
         if (canBite()) {
