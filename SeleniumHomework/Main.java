@@ -14,7 +14,7 @@ public class Main {
         System.setProperty("webdriver.gecko.driver", "D:\\Personal Stuff\\SoftwareTesting\\Automation\\SeleniumJars\\geckodriver.exe");
 
         //Work path
-        System.setProperty("webdriver.gecko.driver", "C:\\Users\\oana.arbuzov\\Documents\\IdeaProjects\\SeleniumHomework\\Webdrivers\\geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver", "./src/main/resources/drivers/geckodriver.exe");
 
         WebDriver page = new FirefoxDriver();
         page.get("http://automationpractice.com/index.php");
@@ -31,7 +31,7 @@ public class Main {
         //System.setProperty("webdriver.chrome.driver", "D:\\Personal Stuff\\SoftwareTesting\\Automation\\SeleniumJars\\chromedriver.exe");
 
         //Work path
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\oana.arbuzov\\Documents\\IdeaProjects\\SeleniumHomework\\Webdrivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "./src/main/resources/drivers/chromedriver.exe");
 
         WebDriver page = new ChromeDriver();
         page.get("http://automationpractice.com/index.php");
@@ -48,7 +48,7 @@ public class Main {
         System.setProperty("webdriver.ie.driver", "D:\\Personal Stuff\\SoftwareTesting\\Automation\\SeleniumJars\\IEDriverServer.exe");
 
         //Work path
-        System.setProperty("webdriver.ie.driver", "C:\\Users\\oana.arbuzov\\Documents\\IdeaProjects\\SeleniumHomework\\Webdrivers\\IEDriverServer.exe");
+        System.setProperty("webdriver.ie.driver", "./src/main/resources/drivers/IEDriverServer.exe");
 
         WebDriver page = new InternetExplorerDriver();
         page.get("http://automationpractice.com/index.php");
