@@ -10,10 +10,6 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class Main {
     public static WebDriver setUpFirefox() {
-        //Home path
-        System.setProperty("webdriver.gecko.driver", "D:\\Personal Stuff\\SoftwareTesting\\Automation\\SeleniumJars\\geckodriver.exe");
-
-        //Work path
         System.setProperty("webdriver.gecko.driver", "./src/main/resources/drivers/geckodriver.exe");
 
         WebDriver page = new FirefoxDriver();
@@ -27,10 +23,6 @@ public class Main {
     }
 
     public static WebDriver setUpChrome() {
-        //Home path
-        //System.setProperty("webdriver.chrome.driver", "D:\\Personal Stuff\\SoftwareTesting\\Automation\\SeleniumJars\\chromedriver.exe");
-
-        //Work path
         System.setProperty("webdriver.chrome.driver", "./src/main/resources/drivers/chromedriver.exe");
 
         WebDriver page = new ChromeDriver();
@@ -44,10 +36,6 @@ public class Main {
     }
 
     public static WebDriver setUpInternetExplorer() {
-        //Home path
-        System.setProperty("webdriver.ie.driver", "D:\\Personal Stuff\\SoftwareTesting\\Automation\\SeleniumJars\\IEDriverServer.exe");
-
-        //Work path
         System.setProperty("webdriver.ie.driver", "./src/main/resources/drivers/IEDriverServer.exe");
 
         WebDriver page = new InternetExplorerDriver();
@@ -60,13 +48,14 @@ public class Main {
         page.quit();
     }
 
-    public static void verifyStringPresent(WebDriver page, String textPresent) {
+    public static boolean verifyStringPresent(WebDriver page, String textPresent) {
 
         if (page.getPageSource().contains(textPresent)) {
             System.out.println(textPresent + " button is present");
         } else {
             System.out.println(textPresent + " button is not found!");
         }
+        return true;
     }
 
     public static void clickSignIn(WebDriver page) {
@@ -76,98 +65,10 @@ public class Main {
 
     }
 
-    public static void loginEmptyCredentials(WebDriver page) {
-        CharSequence[] cs = new String[1];
-        cs[0] = "";
-        page.findElement(By.id("email")).sendKeys(cs);
-
-        cs[0] = "";
-        page.findElement(By.id("passwd")).sendKeys(cs);
-
+    public static void loginCheckCredentials(WebDriver page, String email, String password) {
+        page.findElement(By.id("email")).sendKeys(email);
+        page.findElement(By.id("passwd")).sendKeys(password);
         page.findElement(By.id("SubmitLogin")).click();
-
-        if (page.getPageSource().contains("An email address required.")) {
-            System.out.println("PASS - error appeared");
-        } else {
-            System.out.println("FAIL - error did not appear");
-        }
-    }
-
-    public static void loginEmptyEmail(WebDriver page) {
-        CharSequence[] cs = new String[1];
-        cs[0] = "";
-        page.findElement(By.id("email")).sendKeys(cs);
-
-        cs[0] = "testtest";
-        page.findElement(By.id("passwd")).sendKeys(cs);
-
-        page.findElement(By.id("SubmitLogin")).click();
-
-        if (page.getPageSource().contains("An email address required.")) {
-            System.out.println("PASS - error appeared");
-        } else {
-            System.out.println("FAIL - error did not appear");
-        }
-
-        //Clear Email
-        loginClearPassword(page);
-    }
-
-    public static void loginEmptyPassword(WebDriver page) {
-        CharSequence[] cs = new String[1];
-        cs[0] = "soultear_l2@yahoo.com";
-        page.findElement(By.id("email")).sendKeys(cs);
-
-        cs[0] = "";
-        page.findElement(By.id("passwd")).sendKeys(cs);
-
-        page.findElement(By.id("SubmitLogin")).click();
-
-        if (page.getPageSource().contains("Password is required.")) {
-            System.out.println("PASS - error appeared");
-        } else {
-            System.out.println("FAIL - error did not appear");
-        }
-
-        //Clear Password
-        loginClearEmail(page);
-    }
-
-    public static void loginIncorrectCredentials(WebDriver page) {
-        CharSequence[] cs = new String[1];
-        cs[0] = "daniela";
-        page.findElement(By.id("email")).sendKeys(cs);
-
-        cs[0] = "testtest";
-        page.findElement(By.id("passwd")).sendKeys(cs);
-
-        page.findElement(By.id("SubmitLogin")).click();
-
-        if (page.getPageSource().contains("Invalid email address.")) {
-            System.out.println("PASS - error appeared");
-        } else {
-            System.out.println("FAIL - error did not appear");
-        }
-
-        //Clear Email & Password
-        loginClearExistingData(page);
-    }
-
-    public static void loginCorrectCredentials(WebDriver page) {
-        CharSequence[] cs = new String[1];
-        cs[0] = "soultear_l2@yahoo.com";
-        page.findElement(By.id("email")).sendKeys(cs);
-
-        cs[0] = "Softvision10";
-        page.findElement(By.id("passwd")).sendKeys(cs);
-
-        page.findElement(By.id("SubmitLogin")).click();
-
-        if (page.getPageSource().contains("Welcome to your account. Here you can manage all of your personal information and orders.")) {
-            System.out.println("PASS - You are successfully sign into your account.");
-        } else {
-            System.out.println("FAIL - You are not signed into your account.");
-        }
     }
 
     public static void loginClearExistingData(WebDriver page) {
@@ -206,11 +107,43 @@ public class Main {
 
         clickSignIn(page);
 
-        loginEmptyCredentials(page);
-        loginEmptyEmail(page);
-        loginEmptyPassword(page);
-        loginIncorrectCredentials(page);
-        loginCorrectCredentials(page);
+        loginCheckCredentials(page, "", "");
+        if (page.getPageSource().contains("An email address required.")) {
+            System.out.println("PASS - error appeared");
+        } else {
+            System.out.println("FAIL - error did not appear");
+        }
+
+        loginCheckCredentials(page, "", "testtest");
+        if (page.getPageSource().contains("An email address required.")) {
+            System.out.println("PASS - error appeared");
+        } else {
+            System.out.println("FAIL - error did not appear");
+        }
+        loginClearPassword(page);
+
+        loginCheckCredentials(page, "soultear_l2@yahoo", "");
+        if (page.getPageSource().contains("Password is required.")) {
+            System.out.println("PASS - error appeared");
+        } else {
+            System.out.println("FAIL - error did not appear");
+        }
+        loginClearEmail(page);
+
+        loginCheckCredentials(page, "daniela", "testtest");
+        if (page.getPageSource().contains("Invalid email address.")) {
+            System.out.println("PASS - error appeared");
+        } else {
+            System.out.println("FAIL - error did not appear");
+        }
+        loginClearExistingData(page);
+
+        loginCheckCredentials(page, "soultear_l2@yahoo.com", "Softvision10");
+        if (page.getPageSource().contains("Welcome to your account. Here you can manage all of your personal information and orders.")) {
+            System.out.println("PASS - You are successfully sign into your account.");
+        } else {
+            System.out.println("FAIL - You are not signed into your account.");
+        }
 
         tearDownChrome(page);
         //tearDownFirefox(page);
