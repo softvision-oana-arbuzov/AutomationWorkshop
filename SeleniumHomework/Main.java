@@ -122,7 +122,7 @@ public class Main {
         }
         loginClearPassword(page);
 
-        loginCheckCredentials(page, "soultear_l2@yahoo", "");
+        loginCheckCredentials(page, "soultear_l2@yahoo.com", "");
         if (page.getPageSource().contains("Password is required.")) {
             System.out.println("PASS - error appeared");
         } else {
