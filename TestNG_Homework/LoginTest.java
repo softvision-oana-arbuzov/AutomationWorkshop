@@ -35,22 +35,7 @@ public class LoginTest {
         Assert.assertEquals(actualTitle, expectedTitle);
     }
 
-    @Test (priority = 2)
-    public void clearCredentialsFields() {
-        WebElement inputEmail = driver.findElement(By.id("email"));
-        WebElement inputPassword = driver.findElement(By.id("passwd"));
-        String textInsideInputEmail = inputEmail.getAttribute("value");
-        String textInsideInputPassword = inputPassword.getAttribute("value");
-
-        if(!textInsideInputEmail.equals("") || !textInsideInputPassword.equals("")){
-            inputEmail.clear();
-            inputPassword.clear();
-        }else{
-            System.out.println("Field is empty");
-        }
-    }
-
-    @Test(priority = 3)
+    @Test(priority = 2)
     public void loginEmptyCredentials() {
         String email = "";
         String password = "";
@@ -63,7 +48,7 @@ public class LoginTest {
         Assert.assertTrue(errorMessage.isDisplayed());
     }
 
-    @Test(priority = 4)
+    @Test(priority = 3)
     public void loginEmptyEmail() {
         String email = "";
         String password = "testtest";
@@ -74,14 +59,11 @@ public class LoginTest {
         //An email address required.
         WebElement errorMessage = driver.findElement(By.cssSelector("#center_column div ol li"));
         Assert.assertTrue(errorMessage.isDisplayed());
+
+        driver.findElement(By.id("passwd")).clear();
     }
 
-    @Test (priority = 5)
-    public void clearCredentialsFields1() {
-        clearCredentialsFields();
-    }
-
-    @Test(priority = 6)
+    @Test(priority = 4)
     public void loginEmptyPassword() {
         String email = "soultear_l2@yahoo.com";
         String password = "";
@@ -92,14 +74,11 @@ public class LoginTest {
         //Password is required.
         WebElement errorMessage = driver.findElement(By.cssSelector("#center_column div ol li"));
         Assert.assertTrue(errorMessage.isDisplayed());
+
+        driver.findElement(By.id("email")).clear();
     }
 
-    @Test (priority = 7)
-    public void clearCredentialsFields2() {
-        clearCredentialsFields();
-    }
-
-    @Test(priority = 8)
+    @Test(priority = 5)
     public void loginInvalidCredentials() {
         String email = "daniela";
         String password = "testtest";
@@ -110,14 +89,13 @@ public class LoginTest {
         //Invalid email address.
         WebElement errorMessage = driver.findElement(By.cssSelector("#center_column div ol li"));
         Assert.assertTrue(errorMessage.isDisplayed());
+
+        driver.findElement(By.id("email")).clear();
+        driver.findElement(By.id("passwd")).clear();
+
     }
 
-    @Test (priority = 9)
-    public void clearCredentialsFields3() {
-        clearCredentialsFields();
-    }
-
-    @Test(priority = 10)
+    @Test(priority = 6)
     public void loginInvalidPassword() {
         String email = "soultear_l2@yahoo.com";
         String password = "testtest";
@@ -128,14 +106,12 @@ public class LoginTest {
         //Authentication failed.
         WebElement errorMessage = driver.findElement(By.cssSelector("#center_column div ol li"));
         Assert.assertTrue(errorMessage.isDisplayed());
+
+        driver.findElement(By.id("email")).clear();
+        driver.findElement(By.id("passwd")).clear();
     }
 
-    @Test (priority = 11)
-    public void clearCredentialsFields4() {
-        clearCredentialsFields();
-    }
-
-    @Test(priority = 12)
+    @Test(priority = 7)
     public void loginValidCredentials() {
         String email = "soultear_l2@yahoo.com";
         String password = "testtest";
@@ -148,7 +124,7 @@ public class LoginTest {
         Assert.assertTrue(pageTitle.isDisplayed());
     }
 
-    @Test(priority = 13)
+    @Test(priority = 8)
     public void signOut() {
         //Sign Out
         driver.findElement(By.cssSelector("#header div div div nav div a")).click();
@@ -157,7 +133,7 @@ public class LoginTest {
         Assert.assertEquals(actualTitle, expectedTitle);
     }
 
-    @Test(priority = 14)
+    @Test(priority = 9)
     public void returnToHomePage() {
         //My Store logo
         driver.findElement(By.cssSelector("#header_logo a img")).click();
