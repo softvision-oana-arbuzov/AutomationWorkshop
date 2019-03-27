@@ -1,0 +1,1664 @@
+{
+	"id": "d7605b83-5f26-461e-958d-fd827a9b98b8",
+	"name": "OanaArb_PetCollection",
+	"allTests": [],
+	"timestamp": "2019-03-27T21:52:31.905Z",
+	"collection_id": "30830b60-12c0-4bda-a3fe-1feb30f599f7",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "0",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "30830b60-12c0-4bda-a3fe-1feb30f599f7",
+		"name": "OanaArb_PetCollection",
+		"description": "",
+		"auth": null,
+		"events": null,
+		"variables": [],
+		"order": [
+			"51b844d3-69d9-4739-a54c-a959376eb189",
+			"b983c5fd-492d-49be-93ed-f76b521c21c0",
+			"ed9e8441-9978-451c-9367-7e26c2b65777",
+			"6d677d41-668e-4bec-a2f6-0be769ae035c",
+			"7eb19d79-75bb-479b-ba9f-0359bdbfff5c",
+			"a51c2cf6-7e45-440e-a642-b74998f90b5f",
+			"ffcd6104-5c2a-4be1-82fa-79a0a0c36528",
+			"1301d2ad-2ff8-49de-a5ab-f1f9b7e62bd4",
+			"75965251-ed10-4612-92d4-875ee3c63daa",
+			"d9c7400a-e49b-406e-941f-f0d1228b0d79",
+			"983c1dd6-4ded-4f36-896a-f49a5f4ab704",
+			"39cf9b09-4b6f-428c-a1c0-595f3f8c9e53",
+			"2cb81e28-7182-4828-9526-cca3341b95a9",
+			"75a6ef89-3fd9-4f04-8ba4-c3567323b8b5",
+			"f54d3f42-4e6b-471a-91d4-1ecd54c8652e",
+			"6846b8b9-3329-4e81-adfb-d7906ecc0948",
+			"e2e7e1ab-46e4-49e4-a223-f2d64b8e9843",
+			"c6740692-f723-42e6-b28f-049928ff3026",
+			"da7aab07-5d2b-4b94-8fa7-6b02e0961e57",
+			"0dbd2438-a828-4fea-81a3-6e7cdd6406a3",
+			"b3a6ceb8-20d4-41ac-a57f-91ff2f65cd9e",
+			"db6bf2da-e17a-41bd-a973-b6f5bf53fa2d",
+			"459c56e7-4687-4ac5-b66d-907d019ba241"
+		],
+		"folders_order": [],
+		"owner": "7027966",
+		"favorite": false,
+		"isFavorite": true,
+		"type": "collection",
+		"depth": 0
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "https://petstore.swagger.io/v2/pet",
+			"id": "51b844d3-69d9-4739-a54c-a959376eb189",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Response code is 200": true,
+				"Response must be valid and have a body": true,
+				"Pet added in the correct category": true,
+				"Pet added in the correct ID category": true,
+				"Pet has a name": true,
+				"Pet has ID": true,
+				"Pet has the correct status": true
+			},
+			"testPassFailCounts": {
+				"Response code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct ID category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has a name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has the correct status": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"475"
+			],
+			"allTests": [
+				{
+					"Response code is 200": true,
+					"Response must be valid and have a body": true,
+					"Pet added in the correct category": true,
+					"Pet added in the correct ID category": true,
+					"Pet has a name": true,
+					"Pet has ID": true,
+					"Pet has the correct status": true
+				}
+			],
+			"time": "475",
+			"totalRequestTime": "475",
+			"iterationResults": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet",
+			"id": "b983c5fd-492d-49be-93ed-f76b521c21c0",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Response code is 200": true,
+				"Response must be valid and have a body": true,
+				"Pet added in the correct category": true,
+				"Pet added in the correct ID category": true,
+				"Pet has a name": true,
+				"Pet has ID": true,
+				"Pet has the correct status": true
+			},
+			"testPassFailCounts": {
+				"Response code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct ID category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has a name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has the correct status": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"405"
+			],
+			"allTests": [
+				{
+					"Response code is 200": true,
+					"Response must be valid and have a body": true,
+					"Pet added in the correct category": true,
+					"Pet added in the correct ID category": true,
+					"Pet has a name": true,
+					"Pet has ID": true,
+					"Pet has the correct status": true
+				}
+			],
+			"time": "405",
+			"totalRequestTime": "405",
+			"iterationResults": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet",
+			"id": "ed9e8441-9978-451c-9367-7e26c2b65777",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Response code is 200": true,
+				"Response must be valid and have a body": true,
+				"Pet added in the correct category": true,
+				"Pet added in the correct ID category": true,
+				"Pet has a name": true,
+				"Pet has ID": true,
+				"Pet has the correct status": true
+			},
+			"testPassFailCounts": {
+				"Response code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct ID category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has a name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has the correct status": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"370"
+			],
+			"allTests": [
+				{
+					"Response code is 200": true,
+					"Response must be valid and have a body": true,
+					"Pet added in the correct category": true,
+					"Pet added in the correct ID category": true,
+					"Pet has a name": true,
+					"Pet has ID": true,
+					"Pet has the correct status": true
+				}
+			],
+			"time": "370",
+			"totalRequestTime": "370",
+			"iterationResults": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet/100",
+			"id": "6d677d41-668e-4bec-a2f6-0be769ae035c",
+			"url": "https://petstore.swagger.io/v2/pet/100",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Response code is 200": true,
+				"Response must be valid and have a body": true,
+				"Pet added in the correct category": true,
+				"Pet added in the correct ID category": true,
+				"Pet has a name": true,
+				"Pet has ID": true,
+				"Pet has the correct status": true
+			},
+			"testPassFailCounts": {
+				"Response code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct ID category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has a name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has the correct status": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"376"
+			],
+			"allTests": [
+				{
+					"Response code is 200": true,
+					"Response must be valid and have a body": true,
+					"Pet added in the correct category": true,
+					"Pet added in the correct ID category": true,
+					"Pet has a name": true,
+					"Pet has ID": true,
+					"Pet has the correct status": true
+				}
+			],
+			"time": "376",
+			"totalRequestTime": "376",
+			"iterationResults": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet/200",
+			"id": "7eb19d79-75bb-479b-ba9f-0359bdbfff5c",
+			"url": "https://petstore.swagger.io/v2/pet/200",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Response code is 200": true,
+				"Response must be valid and have a body": true,
+				"Pet added in the correct category": true,
+				"Pet added in the correct ID category": true,
+				"Pet has a name": true,
+				"Pet has ID": true,
+				"Pet has the correct status": true
+			},
+			"testPassFailCounts": {
+				"Response code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct ID category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has a name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has the correct status": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"390"
+			],
+			"allTests": [
+				{
+					"Response code is 200": true,
+					"Response must be valid and have a body": true,
+					"Pet added in the correct category": true,
+					"Pet added in the correct ID category": true,
+					"Pet has a name": true,
+					"Pet has ID": true,
+					"Pet has the correct status": true
+				}
+			],
+			"time": "390",
+			"totalRequestTime": "390",
+			"iterationResults": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet/300",
+			"id": "a51c2cf6-7e45-440e-a642-b74998f90b5f",
+			"url": "https://petstore.swagger.io/v2/pet/200",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Response code is 200": true,
+				"Response must be valid and have a body": true,
+				"Pet added in the correct category": true,
+				"Pet added in the correct ID category": true,
+				"Pet has a name": true,
+				"Pet has ID": true,
+				"Pet has the correct status": true
+			},
+			"testPassFailCounts": {
+				"Response code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct ID category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has a name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has the correct status": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"358"
+			],
+			"allTests": [
+				{
+					"Response code is 200": true,
+					"Response must be valid and have a body": true,
+					"Pet added in the correct category": true,
+					"Pet added in the correct ID category": true,
+					"Pet has a name": true,
+					"Pet has ID": true,
+					"Pet has the correct status": true
+				}
+			],
+			"time": "358",
+			"totalRequestTime": "358",
+			"iterationResults": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet",
+			"id": "ffcd6104-5c2a-4be1-82fa-79a0a0c36528",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Response code is 200": true,
+				"Response must be valid and have a body": true,
+				"Pet added in the correct category": true,
+				"Pet added in the correct ID category": true,
+				"Pet has a name": true,
+				"Pet has ID": true,
+				"Pet has the correct status": true
+			},
+			"testPassFailCounts": {
+				"Response code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct ID category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has a name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has the correct status": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"369"
+			],
+			"allTests": [
+				{
+					"Response code is 200": true,
+					"Response must be valid and have a body": true,
+					"Pet added in the correct category": true,
+					"Pet added in the correct ID category": true,
+					"Pet has a name": true,
+					"Pet has ID": true,
+					"Pet has the correct status": true
+				}
+			],
+			"time": "369",
+			"totalRequestTime": "369",
+			"iterationResults": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet",
+			"id": "1301d2ad-2ff8-49de-a5ab-f1f9b7e62bd4",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Response code is 200": true,
+				"Response must be valid and have a body": true,
+				"Pet added in the correct category": true,
+				"Pet added in the correct ID category": true,
+				"Pet has a name": true,
+				"Pet has ID": true,
+				"Pet has the correct status": true
+			},
+			"testPassFailCounts": {
+				"Response code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct ID category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has a name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has the correct status": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"396"
+			],
+			"allTests": [
+				{
+					"Response code is 200": true,
+					"Response must be valid and have a body": true,
+					"Pet added in the correct category": true,
+					"Pet added in the correct ID category": true,
+					"Pet has a name": true,
+					"Pet has ID": true,
+					"Pet has the correct status": true
+				}
+			],
+			"time": "396",
+			"totalRequestTime": "396",
+			"iterationResults": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet",
+			"id": "75965251-ed10-4612-92d4-875ee3c63daa",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Response code is 200": true,
+				"Response must be valid and have a body": true,
+				"Pet added in the correct category": true,
+				"Pet added in the correct ID category": true,
+				"Pet has a name": true,
+				"Pet has ID": true,
+				"Pet has the correct status": true
+			},
+			"testPassFailCounts": {
+				"Response code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct ID category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has a name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has the correct status": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"376"
+			],
+			"allTests": [
+				{
+					"Response code is 200": true,
+					"Response must be valid and have a body": true,
+					"Pet added in the correct category": true,
+					"Pet added in the correct ID category": true,
+					"Pet has a name": true,
+					"Pet has ID": true,
+					"Pet has the correct status": true
+				}
+			],
+			"time": "376",
+			"totalRequestTime": "376",
+			"iterationResults": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet/100",
+			"id": "d9c7400a-e49b-406e-941f-f0d1228b0d79",
+			"url": "https://petstore.swagger.io/v2/pet/100",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Response code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"400"
+			],
+			"allTests": [
+				{
+					"Response code is 200": true
+				}
+			],
+			"time": "400",
+			"totalRequestTime": "400",
+			"iterationResults": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet/100 Error404-NotFound",
+			"id": "983c1dd6-4ded-4f36-896a-f49a5f4ab704",
+			"url": "https://petstore.swagger.io/v2/pet/100",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"407"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "407",
+			"totalRequestTime": "407",
+			"iterationResults": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet/12341 Error404-NotFound",
+			"id": "39cf9b09-4b6f-428c-a1c0-595f3f8c9e53",
+			"url": "https://petstore.swagger.io/v2/pet/12341",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"404"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "404",
+			"totalRequestTime": "404",
+			"iterationResults": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet Error400-BadRequest",
+			"id": "2cb81e28-7182-4828-9526-cca3341b95a9",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"358"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "358",
+			"totalRequestTime": "358",
+			"iterationResults": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet Error500-ServerError",
+			"id": "75a6ef89-3fd9-4f04-8ba4-c3567323b8b5",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 500,
+				"name": "Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"395"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "395",
+			"totalRequestTime": "395",
+			"iterationResults": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet ID=-0",
+			"id": "f54d3f42-4e6b-471a-91d4-1ecd54c8652e",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"380"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "380",
+			"totalRequestTime": "380",
+			"iterationResults": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet/-9223372036854775808",
+			"id": "6846b8b9-3329-4e81-adfb-d7906ecc0948",
+			"url": "https://petstore.swagger.io/v2/pet/-9223372036854775808",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"381"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "381",
+			"totalRequestTime": "381",
+			"iterationResults": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet Error500-ServerError",
+			"id": "e2e7e1ab-46e4-49e4-a223-f2d64b8e9843",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 500,
+				"name": "Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"409"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "409",
+			"totalRequestTime": "409",
+			"iterationResults": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet Error415-UnsupportedMediaType",
+			"id": "c6740692-f723-42e6-b28f-049928ff3026",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 415,
+				"name": "Unsupported Media Type",
+				"detail": {
+					"name": "Unsupported Media Type",
+					"detail": "The request entity has a media type which the server or resource does not support. For example, the client uploads an image as image/svg+xml, but the server requires that images use a different format."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"397"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "397",
+			"totalRequestTime": "397",
+			"iterationResults": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet Error400-BadRequest",
+			"id": "da7aab07-5d2b-4b94-8fa7-6b02e0961e57",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"382"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "382",
+			"totalRequestTime": "382",
+			"iterationResults": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet/test Error404-NotFound",
+			"id": "0dbd2438-a828-4fea-81a3-6e7cdd6406a3",
+			"url": "https://petstore.swagger.io/v2/pet/-9223372036854775808",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"374"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "374",
+			"totalRequestTime": "374",
+			"iterationResults": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet Error415-UnsupportedMediaType",
+			"id": "b3a6ceb8-20d4-41ac-a57f-91ff2f65cd9e",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 415,
+				"name": "Unsupported Media Type",
+				"detail": {
+					"name": "Unsupported Media Type",
+					"detail": "The request entity has a media type which the server or resource does not support. For example, the client uploads an image as image/svg+xml, but the server requires that images use a different format."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"367"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "367",
+			"totalRequestTime": "367",
+			"iterationResults": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet Error400-BadRequest",
+			"id": "db6bf2da-e17a-41bd-a973-b6f5bf53fa2d",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"399"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "399",
+			"totalRequestTime": "399",
+			"iterationResults": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet/test Error404-NotFound",
+			"id": "459c56e7-4687-4ac5-b66d-907d019ba241",
+			"url": "https://petstore.swagger.io/v2/pet/test",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"375"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "375",
+			"totalRequestTime": "375",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 64,
+	"totalFail": 0,
+	"totalTime": 8943,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "https://petstore.swagger.io/v2/pet",
+			"id": "51b844d3-69d9-4739-a54c-a959376eb189",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"time": "2019-03-27T21:52:31.905Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Response code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct ID category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has a name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has the correct status": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet",
+			"id": "b983c5fd-492d-49be-93ed-f76b521c21c0",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"time": "2019-03-27T21:52:31.905Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Response code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct ID category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has a name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has the correct status": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet",
+			"id": "ed9e8441-9978-451c-9367-7e26c2b65777",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"time": "2019-03-27T21:52:31.905Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Response code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct ID category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has a name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has the correct status": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet/100",
+			"id": "6d677d41-668e-4bec-a2f6-0be769ae035c",
+			"url": "https://petstore.swagger.io/v2/pet/100",
+			"time": "2019-03-27T21:52:31.905Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Response code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct ID category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has a name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has the correct status": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet/200",
+			"id": "7eb19d79-75bb-479b-ba9f-0359bdbfff5c",
+			"url": "https://petstore.swagger.io/v2/pet/200",
+			"time": "2019-03-27T21:52:31.905Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Response code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct ID category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has a name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has the correct status": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet/300",
+			"id": "a51c2cf6-7e45-440e-a642-b74998f90b5f",
+			"url": "https://petstore.swagger.io/v2/pet/200",
+			"time": "2019-03-27T21:52:31.905Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Response code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct ID category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has a name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has the correct status": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet",
+			"id": "ffcd6104-5c2a-4be1-82fa-79a0a0c36528",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"time": "2019-03-27T21:52:31.905Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Response code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct ID category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has a name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has the correct status": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet",
+			"id": "1301d2ad-2ff8-49de-a5ab-f1f9b7e62bd4",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"time": "2019-03-27T21:52:31.905Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Response code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct ID category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has a name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has the correct status": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet",
+			"id": "75965251-ed10-4612-92d4-875ee3c63daa",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"time": "2019-03-27T21:52:31.905Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Response code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet added in the correct ID category": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has a name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet has the correct status": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet/100",
+			"id": "d9c7400a-e49b-406e-941f-f0d1228b0d79",
+			"url": "https://petstore.swagger.io/v2/pet/100",
+			"time": "2019-03-27T21:52:31.905Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Response code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet/100 Error404-NotFound",
+			"id": "983c1dd6-4ded-4f36-896a-f49a5f4ab704",
+			"url": "https://petstore.swagger.io/v2/pet/100",
+			"time": "2019-03-27T21:52:31.905Z",
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet/12341 Error404-NotFound",
+			"id": "39cf9b09-4b6f-428c-a1c0-595f3f8c9e53",
+			"url": "https://petstore.swagger.io/v2/pet/12341",
+			"time": "2019-03-27T21:52:31.905Z",
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet Error400-BadRequest",
+			"id": "2cb81e28-7182-4828-9526-cca3341b95a9",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"time": "2019-03-27T21:52:31.905Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet Error500-ServerError",
+			"id": "75a6ef89-3fd9-4f04-8ba4-c3567323b8b5",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"time": "2019-03-27T21:52:31.905Z",
+			"responseCode": {
+				"code": 500,
+				"name": "Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet ID=-0",
+			"id": "f54d3f42-4e6b-471a-91d4-1ecd54c8652e",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"time": "2019-03-27T21:52:31.905Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet/-9223372036854775808",
+			"id": "6846b8b9-3329-4e81-adfb-d7906ecc0948",
+			"url": "https://petstore.swagger.io/v2/pet/-9223372036854775808",
+			"time": "2019-03-27T21:52:31.905Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet Error500-ServerError",
+			"id": "e2e7e1ab-46e4-49e4-a223-f2d64b8e9843",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"time": "2019-03-27T21:52:31.905Z",
+			"responseCode": {
+				"code": 500,
+				"name": "Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet Error415-UnsupportedMediaType",
+			"id": "c6740692-f723-42e6-b28f-049928ff3026",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"time": "2019-03-27T21:52:31.905Z",
+			"responseCode": {
+				"code": 415,
+				"name": "Unsupported Media Type",
+				"detail": {
+					"name": "Unsupported Media Type",
+					"detail": "The request entity has a media type which the server or resource does not support. For example, the client uploads an image as image/svg+xml, but the server requires that images use a different format."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet Error400-BadRequest",
+			"id": "da7aab07-5d2b-4b94-8fa7-6b02e0961e57",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"time": "2019-03-27T21:52:31.905Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet/test Error404-NotFound",
+			"id": "0dbd2438-a828-4fea-81a3-6e7cdd6406a3",
+			"url": "https://petstore.swagger.io/v2/pet/-9223372036854775808",
+			"time": "2019-03-27T21:52:31.905Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet Error415-UnsupportedMediaType",
+			"id": "b3a6ceb8-20d4-41ac-a57f-91ff2f65cd9e",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"time": "2019-03-27T21:52:31.905Z",
+			"responseCode": {
+				"code": 415,
+				"name": "Unsupported Media Type",
+				"detail": {
+					"name": "Unsupported Media Type",
+					"detail": "The request entity has a media type which the server or resource does not support. For example, the client uploads an image as image/svg+xml, but the server requires that images use a different format."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet Error400-BadRequest",
+			"id": "db6bf2da-e17a-41bd-a973-b6f5bf53fa2d",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"time": "2019-03-27T21:52:31.905Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "https://petstore.swagger.io/v2/pet/test Error404-NotFound",
+			"id": "459c56e7-4687-4ac5-b66d-907d019ba241",
+			"url": "https://petstore.swagger.io/v2/pet/test",
+			"time": "2019-03-27T21:52:31.905Z",
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {}
+		}
+	],
+	"synced": false
+}
