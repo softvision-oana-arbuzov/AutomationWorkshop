@@ -71,7 +71,6 @@ public abstract class WebUiPage {
       }
   }
 
-
   public void verify() {
     verify(true);
   }
